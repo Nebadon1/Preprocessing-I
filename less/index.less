@@ -76,7 +76,7 @@ html, body {
 	display:flex;
 	flex-direction: row;
 }
- .mixin-shadow-box{
+ .mixin-shadow-box(){
 	box-shadow: 10px 10px 15px @shadow-boxes;	 
  }
 
@@ -84,15 +84,17 @@ html, body {
 	max-width: 900px;
 	margin: 0 auto;
 	font-size: 1.6rem;
-	.mixin-shadow-box
-	//border: 1px solid salmon;
+	.mixin-shadow-box;
+	
+	
+	}
 }   
 
 header{
-	.mixin-flex-row;
+		.mixin-flex-row;
     justify-content: flex-end;
-	margin: 20px 0px;
-	padding-top: 20px;
+		margin: 20px 0px;
+		padding-top: 20px;
 
 	nav{
 		margin-left: 62px;
@@ -109,13 +111,13 @@ header{
 
 .main-section{
 	display: flex;
-    flex-direction: column;
-    border-radius: 5px;
+  flex-direction: column;
+  border-radius: 5px;
 	background-color: @Athen-Gray;
 	
 	.picture{
 		width: 41%;
-    	height: auto;
+    height: auto;
 		margin: 50px 0 30px 40px;
 		border-radius: 5px;
 		.mixin-shadow-box;
@@ -177,21 +179,25 @@ header{
 }
 
 .second-section{
+	display:flex;
+	flex-direction: row;
 	.mixin-flex-row;
 	margin-top: 41px;
 	h1{
 		font-size: 3.4rem;
 		padding-bottom: 20px;
-		@media(max-width:500px){
-		font-size: 3.4rem;
+		
+			@media(max-width:500px){
+			font-size: 3.4rem;
     	padding-bottom: 22px;
-		width: 50%;
-		}
+			width: 50%;
+			}
 	}
 
 	.listen{
 		width: 50%
 	}
+
 	p{
 		line-height: 2.0;
 	}
@@ -201,22 +207,22 @@ header{
 		h6{
 
 			font-size: 1.5rem;
-    		border: 1px solid #E9ECEF;
-    		width: 348%;
-    		padding: 13px;
+    	border: 1px solid #E9ECEF;
+    	width: 348%;
+    	padding: 13px;
 			border-radius: 5px;
 			
-			@media(max-width:500px){
-			width: 100%;
-			}
+				@media(max-width:500px){
+				width: 100%;
+				}
 		}
 	}
 	@media(max-width:500px){
 		display: flex;
-    	flex-direction: column;
+    flex-direction: column;
 		width: 100%;
-    	text-align: center;
-    	margin: 0 150px;
+    text-align: center;
+    margin: 0 150px;
     	
 	}
 }
@@ -224,8 +230,8 @@ header{
 .thrid-section{
 	display: flex;
 	flex-direction: column;
-	//justify-content: space-between;
 	margin-top: 41px;
+	
 	.head-row{
 		display: flex;
 		flex-direction: row;
@@ -241,6 +247,7 @@ header{
 		border-top: 1px solid @Athen-Gray;
 	}
 }
+
 .table-exp{
 	margin: 40px 0;
 

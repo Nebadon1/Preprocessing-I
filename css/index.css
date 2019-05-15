@@ -137,14 +137,16 @@ body {
   font-size: 62.5%;
   font-family: 'Lato', sans-serif;
 }
-.mixin-shadow-box {
-  box-shadow: 10px 10px 15px #AAAAAA;
-}
 .container {
   max-width: 900px;
   margin: 0 auto;
   font-size: 1.6rem;
   box-shadow: 10px 10px 15px #AAAAAA;
+}
+@media (max-width: 500px) {
+  .container {
+    overflow-y: hidden;
+  }
 }
 header {
   display: flex;
