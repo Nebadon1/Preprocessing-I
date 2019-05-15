@@ -86,9 +86,7 @@ html, body {
 	font-size: 1.6rem;
 	.mixin-shadow-box;
 	
-	
-	}
-}   
+}  
 
 header{
 		.mixin-flex-row;
@@ -183,6 +181,16 @@ header{
 	flex-direction: row;
 	.mixin-flex-row;
 	margin-top: 41px;
+
+	@media(max-width:500px){
+		display: flex;
+    flex-direction: column;
+		width: 100%;
+    text-align: center;
+   
+    	
+	}
+	
 	h1{
 		font-size: 3.4rem;
 		padding-bottom: 20px;
@@ -190,12 +198,19 @@ header{
 			@media(max-width:500px){
 			font-size: 3.4rem;
     	padding-bottom: 22px;
-			width: 50%;
+			width: 86%;
+			margin: auto;
 			}
 	}
 
 	.listen{
-		width: 50%
+		width: 50%;
+		margin: 0 auto;
+		
+		@media(max-width:500px){
+			width: 100%;
+      margin: 0 auto;
+		}
 	}
 
 	p{
@@ -204,27 +219,30 @@ header{
 	
 	.table{
 		width: 50%;
+
+		@media(max-width:500px){
+		  display:flex;
+			flex-direction: column;
+			margin: 0 auto;
+			width: 100%
+			}
+
 		h6{
 
 			font-size: 1.5rem;
     	border: 1px solid #E9ECEF;
-    	width: 348%;
+    	width: 100%;
     	padding: 13px;
 			border-radius: 5px;
 			
-				@media(max-width:500px){
-				width: 100%;
-				}
+			@media(max-width:500px){
+				font-size: 2.5rem;
+			}
+				
 		}
+	
 	}
-	@media(max-width:500px){
-		display: flex;
-    flex-direction: column;
-		width: 100%;
-    text-align: center;
-    margin: 0 150px;
-    	
-	}
+	
 }
 
 .thrid-section{
